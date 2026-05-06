@@ -29,3 +29,13 @@ Note:
 
 N = [5, 3, 2, 2, 1, 5, 5, 7, 5, 10]
 M = [10, 111, 1, 4, 5, 67, 2]
+
+dict = {}
+for num in N:
+    dict[num] = dict.get(num,0)+1
+
+result = {}
+for num in M:
+    result[num] = dict.get(num, 0)
+
+print(result)
