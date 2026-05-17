@@ -1,4 +1,4 @@
-num = [12,7,9,6,17,34]
+num = [12,7,9,6,60,34]
 
 def second_largest(num):
     n = len(num)
@@ -8,7 +8,8 @@ def second_largest(num):
             if num[j]<num[min_index]:
                 min_index=j
         num[i],num[min_index]=num[min_index],num[i]
-    return
- 
-print(num[-2])
     
+    # print("the second largest number is :- ",num[-2])
+    return num[-2]
+
+print(second_largest(num))   
